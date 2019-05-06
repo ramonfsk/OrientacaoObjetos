@@ -1,0 +1,5 @@
+package com.locadorav2;
+
+public class Funcionario {
+	private static int maxFuncionario = 2;
+}

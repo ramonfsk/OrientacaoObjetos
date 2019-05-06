@@ -1,0 +1,39 @@
+package com.carAgency;
+
+public class Sale {
+	private static int numSales;
+	private Car car;
+	private Client clnt;
+	
+	public Sale(Car car, Client clnt) {
+		setCar(car);
+		setClnt(clnt);
+		numSales++;
+	}
+
+	public static Sale registerSale() {
+		Sale tmpSale = new Sale(
+				
+		);
+	}
+	
+	public Car getCar() {
+		return car;
+	}
+
+	public void setCar(Car car) {
+		this.car = car;
+	}
+
+	public Client getClnt() {
+		return clnt;
+	}
+
+	public void setClnt(Client clnt) {
+		this.clnt = clnt;
+	}
+
+	public static int getNumSales() {
+		return numSales;
+	}
+}

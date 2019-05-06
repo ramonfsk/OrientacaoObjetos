@@ -1,0 +1,50 @@
+package com.locadorav2;
+
+import java.util.ArrayList;
+
+public class Filial {
+	//ATTRIBUTES
+	private String nome;
+	private ArrayList<Filme> flms = new ArrayList<Filme>();
+	private ArrayList<Funcionario> funcs = new ArrayList<Funcionario>();
+	private ArrayList<Cliente> clnts = new ArrayList<Cliente>();
+	//CONSTRUCTOR
+	public Filial(String nome, Filme flm, Funcionario func, Cliente clnt) {
+		setNome(nome);
+		addFilme(flm);
+		addFuncionario(func);
+		addCliente(clnt);
+	}
+	//METHODS
+	public void addFilme(Filme flm) {
+		this.flms.add(flm);
+	}
+	public void addFuncionario(Funcionario func) {
+		this.funcs.add(func);
+	}
+	public void addCliente(Cliente clnt) {
+		this.clnts.add(clnt);
+	}
+	public String listaFiliais(ArrayList<Filial> flals) {
+		String tmp = null;
+		for (Filial filial : flals) {
+			String 
+		}
+	}
+	//GETTERS & SETTERS
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public ArrayList<Filme> getFlms() {
+		return flms;
+	}
+	public ArrayList<Cliente> getClnts() {
+		return clnts;
+	}
+	public ArrayList<Funcionario> getFuncs() {
+		return funcs;
+	}
+}

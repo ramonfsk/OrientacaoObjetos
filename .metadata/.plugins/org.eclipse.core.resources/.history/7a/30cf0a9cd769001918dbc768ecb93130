@@ -1,0 +1,9 @@
+package com.locadorav2;
+
+import java.util.ArrayList;
+
+public class Locacao {
+	Cliente clt;
+	Funcionario func;
+	ArrayList<Filme> filmes = new ArrayList<Filme>();
+}

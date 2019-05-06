@@ -1,0 +1,49 @@
+package com.carAgency;
+
+import com.locadorav2.View;
+
+public class Executor {
+	public static void main(String[] args) {
+		int option = 1;
+		
+		CarAgency carAgency = CarAgency.registerCarAgency();
+		
+		do {
+			option = View.solicitarDadosInt("Selecione uma opcao: ",
+					"1 - Cadastrar filial\n"
+					+"2 - Listar filiais\n"
+					+"3 - Selecionar uma filial\n"
+					+"0 - Sair.."
+			);
+			switch (option) {
+			case 0:
+				option = 0;
+				break;
+			case 1:
+				try {
+					Branch brnch = Branch.registerBranch();
+					carAgency.addBranch(brnch);
+				} catch (Exception e) {
+					View.exibirMsgErro(e.getMessage());
+				}
+				break;
+			case 2:
+				if(Branch.getNumBranchs() == 0)
+					View.exibirMsgErro("Nao existem filiais cadastradas!");
+				else {
+					String msg = Branch.listBranchs(carAgency.getBrnchs());
+					View.exibirMsg(msg);
+				}
+				break;
+			case 3:
+				if(Branch.getNumBranchs() == 0)
+				break;
+			default:
+				View.exibirMsgErro("Opcao invalida!");
+				break;
+			}
+		} while (option != 0);	
+	}
+	
+	
+}

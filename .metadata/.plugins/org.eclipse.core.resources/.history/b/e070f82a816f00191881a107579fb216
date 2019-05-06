@@ -1,0 +1,54 @@
+package com.carAgency;
+
+public class Car {
+	private static int numCars ;
+	private String brand;
+	private String model;
+	private String plate;
+	private int chassi;
+	
+	public Car(String brand, String model, String plate, int chassi){
+		setBrand(brand);
+		setModel(model);
+		setPlate(plate);
+		setChassi(chassi);
+		numCars++;
+	}
+	
+	
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public String getPlate() {
+		return plate;
+	}
+
+	public void setPlate(String plate) {
+		this.plate = plate;
+	}
+
+	public int getChassi() {
+		return chassi;
+	}
+
+	public void setChassi(int chassi) {
+		this.chassi = chassi;
+	}
+
+	public static int getNumCars() {
+		return numCars;
+	}
+}

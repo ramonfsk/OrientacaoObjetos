@@ -1,0 +1,57 @@
+package com.carAgency;
+
+import java.util.ArrayList;
+
+public class Sale {
+	private static int numSales;
+	private Car car;
+	private Client clnt;
+	
+	public Sale(Car car, Client clnt) {
+		setCar(car);
+		setClnt(clnt);
+		numSales++;
+	}
+
+	public static Sale registerSale(ArrayList<Car> cars, ArrayList<Client> clnts) {
+		Sale tmpSale = new Sale(
+				Car.selectCar(cars),
+				Client.selectClient(clnts)
+		);
+		return tmpSale;
+	}
+	
+	public static String listSales(ArrayList<Sale> sales) {
+		int count = 0;
+		String list = null;
+		StringBuilder builder = new StringBuilder();
+		for (Sale sale : sales) {
+			builder.append((count+1)+" - Cliente: "+sale.getClnt().getName()+" | Carro: "+sale.getCar().getModel()+"\n");
+			count++;
+		}
+		list = builder.toString();
+		return list;
+	}
+	
+	
+	
+	public Car getCar() {
+		return car;
+	}
+
+	public void setCar(Car car) {
+		this.car = car;
+	}
+
+	public Client getClnt() {
+		return clnt;
+	}
+
+	public void setClnt(Client clnt) {
+		this.clnt = clnt;
+	}
+
+	public static int getNumSales() {
+		return numSales;
+	}
+}

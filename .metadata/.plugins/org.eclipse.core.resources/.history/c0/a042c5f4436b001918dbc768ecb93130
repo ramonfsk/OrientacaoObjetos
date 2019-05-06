@@ -1,0 +1,20 @@
+package com.locadorav2;
+
+import java.util.ArrayList;
+
+public class Locadora {
+	//ATTRIBUTES
+	private ArrayList<Filial> flais = new ArrayList<Filial>();
+	//CONSTRUCTOR
+	public Locadora() {
+		
+	}
+	//METHODS
+	public void addFilial(Filial flal) {
+		this.flais.add(flal);
+	}
+	//GETTERS & SETTERS
+	public ArrayList<Filial> getFlais() {
+		return flais;
+	}
+}

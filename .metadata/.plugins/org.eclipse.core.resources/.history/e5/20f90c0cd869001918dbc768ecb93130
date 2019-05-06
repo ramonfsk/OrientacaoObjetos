@@ -1,0 +1,11 @@
+package com.locadorav2;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Locacao {
+	Cliente clt;
+	Funcionario func;
+	ArrayList<Filme> filmes = new ArrayList<Filme>();
+	Date dataHora;
+}

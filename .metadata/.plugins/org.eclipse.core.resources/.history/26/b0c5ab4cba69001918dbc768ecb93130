@@ -1,0 +1,10 @@
+package com.locadorav2;
+
+import javax.swing.JOptionPane;
+
+public class View {
+	//Exibir mensagem simples
+	public static void exibirMsg(String str) {
+		JOptionPane.showMessageDialog(null, str);
+	}
+}

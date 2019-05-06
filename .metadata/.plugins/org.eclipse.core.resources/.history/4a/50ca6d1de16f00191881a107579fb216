@@ -1,0 +1,8 @@
+package com.carAgency;
+
+import java.util.ArrayList;
+
+public class CarAgency {
+	private String name;
+	private ArrayList<Branch> brnchs = new ArrayList<Branch>();
+}

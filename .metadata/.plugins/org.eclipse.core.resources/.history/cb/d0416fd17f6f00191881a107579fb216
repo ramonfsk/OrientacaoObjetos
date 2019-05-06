@@ -1,0 +1,6 @@
+package com.carAgency;
+
+public class Sale {
+	
+	private Client clnt;
+}

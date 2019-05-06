@@ -1,0 +1,93 @@
+package com.carAgency;
+
+import java.util.ArrayList;
+
+public class Car {
+	private static int numCars ;
+	private String brand;
+	private String model;
+	private String plate;
+	private int chassi;
+	private double value;
+	
+	public Car(String brand, String model, String plate, int chassi, double value){
+		setBrand(brand);
+		setModel(model);
+		setPlate(plate);
+		setChassi(chassi);
+		setValue(value);
+		numCars++;
+	}
+	
+	public static Car registerCar() {
+		Car tmp = new Car(
+			View.solicitarDadosString(null, "Qual a marca do carro: "),
+			View.solicitarDadosString(null, "E qual o modelo: "),
+			View.solicitarDadosString(null, "Agora, informe a placa: "),
+			View.solicitarDadosInt(null, "E o numero do chassi: "),
+			View.solicitarDadosDouble(null, "E por ultimo, o valor: ")
+		);
+		
+		return tmp;
+	}
+	
+	public static String listCars(ArrayList<Car> cars) {
+		int count = 0;
+		String list = null;
+		StringBuilder builder = new StringBuilder();
+		for (Car car : cars) {
+			builder.append((count+1)+" - "+car.getModel()+" ["+car.getPlate()+"]\n");
+			count++;
+		}
+		list = builder.toString();
+		return list;
+	}
+	
+	public static Car selectCar() {
+		
+	}
+	
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public String getPlate() {
+		return plate;
+	}
+
+	public void setPlate(String plate) {
+		this.plate = plate;
+	}
+
+	public int getChassi() {
+		return chassi;
+	}
+
+	public void setChassi(int chassi) {
+		this.chassi = chassi;
+	}
+
+	public static int getNumCars() {
+		return numCars;
+	}
+
+	public double getValue() {
+		return value;
+	}
+
+	public void setValue(double value) {
+		this.value = value;
+	}
+}

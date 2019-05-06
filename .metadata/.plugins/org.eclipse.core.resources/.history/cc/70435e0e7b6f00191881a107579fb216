@@ -1,0 +1,12 @@
+package com.carAgency;
+
+public class Car {
+	private String brand;
+	private String model;
+	private String plate;
+	private int chassi;
+	
+	Car(String brand, String model, String plate, int chassi){
+		
+	}
+}

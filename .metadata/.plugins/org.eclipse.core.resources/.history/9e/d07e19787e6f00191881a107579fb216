@@ -1,0 +1,12 @@
+package com.carAgency;
+
+public class Client {
+	private static int numClients;
+	private String name;
+	private String phone;
+	private String email;
+	
+	public Client(String name, String phone) {
+		
+	}
+}

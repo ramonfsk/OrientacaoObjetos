@@ -1,0 +1,35 @@
+package com.carAgency;
+
+public class Executor {
+	public static void main(String[] args) {
+		int option = 1;
+		
+		CarAgency carAgency = CarAgency.registerCarAgency();
+		
+		do {
+			option = View.solicitarDadosInt("Selecione uma opcao: ",
+					"1 - Cadastrar filial\n"
+					+"2 - Listar filiais\n"
+					+"3 - Selecionar uma filial\n"
+					+"0 - Sair.."
+			);
+			switch (option) {
+			case 0:
+				option = 0;
+				break;
+			case 1:
+				try {
+					Branch brnch = Branch.registerBranch();
+					carAgency.addBranch(brnch);
+				} catch (Exception e) {
+					View.exibirMsgErro(e.getMessage());
+				}
+				break;
+			default:
+				View.exibirMsgErro("Opcao invalida!");
+				break;
+			}
+		} while (option != 0);
+		
+	}
+}

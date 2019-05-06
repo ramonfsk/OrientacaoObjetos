@@ -1,0 +1,8 @@
+package com.carAgency;
+
+import java.util.ArrayList;
+
+public class Report {
+	private ArrayList<Sale> sales = new ArrayList<Sale>();
+	private ArrayList<Branch> brnchs = new ArrayList<Branch>();
+}

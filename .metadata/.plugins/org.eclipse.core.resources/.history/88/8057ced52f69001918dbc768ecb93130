@@ -1,0 +1,14 @@
+package com.locadorav2;
+
+public class Cliente {
+	//ATTRIBUTES
+	private int codigo;
+	private String nome;
+	private int telefone;
+	//CONSTRUCTOR
+	public Cliente(int codigo, String nome, int telefone) {
+		
+	}
+	//METHODS
+	//GETTERS & SETTERS
+}

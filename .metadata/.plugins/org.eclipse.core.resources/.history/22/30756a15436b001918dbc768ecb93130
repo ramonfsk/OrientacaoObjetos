@@ -1,0 +1,38 @@
+package com.locadorav2;
+
+import java.util.ArrayList;
+
+public class Locadora {
+	//ATTRIBUTES
+	ArrayList<Filme> flms = new ArrayList<Filme>();
+	ArrayList<Funcionario> funcs = new ArrayList<Funcionario>();
+	ArrayList<Cliente> clnts = new ArrayList<Cliente>();
+	ArrayList<Filial> flais = new ArrayList<Filial>();
+	//CONSTRUCTOR
+	//METHODS
+	public void addFilme(Filme flm) {
+		this.flms.add(flm);
+	}
+	public void addFuncionario(Funcionario func) {
+		this.funcs.add(func);
+	}
+	public void addCliente(Cliente clt) {
+		this.clnts.add(clt);
+	}
+	public void addFilial() {
+		
+	}
+	//GETTERS & SETTERS
+	public ArrayList<Filme> getFlms() {
+		return flms;
+	}
+	public ArrayList<Cliente> getClnts() {
+		return clnts;
+	}
+	public ArrayList<Funcionario> getFuncs() {
+		return funcs;
+	}
+	public ArrayList<Filial> getFlais() {
+		return flais;
+	}
+}
