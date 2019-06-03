@@ -1,7 +1,0 @@
-package com.carAgency;
-
-import java.util.ArrayList;
-
-public class Filial {
-	ArrayList<Cliente> clnts = new ArrayList<Cliente>();
-}

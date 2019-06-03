@@ -1,7 +1,0 @@
-package com.carAgency;
-
-public class Sale {
-	private static int numSales;
-	private Car car;
-	private Client clnt;
-}

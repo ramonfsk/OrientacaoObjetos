@@ -1,6 +1,0 @@
-package com.carAgency;
-
-public class Branch {
-	private static int numBranchs;
-	
-}

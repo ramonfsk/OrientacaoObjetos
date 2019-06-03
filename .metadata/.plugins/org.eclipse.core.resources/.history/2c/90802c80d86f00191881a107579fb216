@@ -1,7 +1,0 @@
-package com.carAgency;
-
-import java.util.ArrayList;
-
-public class CarAgency {
-	ArrayList<Branch> bnchs = new ArrayList<Branch>();
-}

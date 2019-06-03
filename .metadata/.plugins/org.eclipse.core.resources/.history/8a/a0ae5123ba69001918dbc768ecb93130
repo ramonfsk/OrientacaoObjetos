@@ -1,8 +1,0 @@
-package com.locadorav2;
-
-public class View {
-	//Exibir mensagem simples
-	public static void exibirMsg() {
-		
-	}
-}

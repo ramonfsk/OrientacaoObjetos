@@ -1,9 +1,0 @@
-package com.carAgency;
-
-import java.util.ArrayList;
-
-public class Filial {
-	ArrayList<Carro> cars
-	ArrayList<Cliente> clnts = new ArrayList<Cliente>();
-	ArrayList<Venda> vnds = new ArrayList<Venda>();
-}

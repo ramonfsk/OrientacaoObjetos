@@ -4,6 +4,11 @@ public class Utils {
 	public static void validaString(String str) {
 		if(str.isEmpty())
 			throw new IllegalArgumentException("Nome vazio!");
+	}
+	
+	public static void validaNome(String str) {
+		if(str.isEmpty())
+			throw new IllegalArgumentException("Nome vazio!");
 		if(!str.matches("^[ a-zA-ZÁÂÃÀÇÉÊÍÓÔÕÚÜáâãàçéêíóôõúü]*$"))
 			throw new IllegalArgumentException("Nao e permitido inserir numeros nesse campo!");
 	}
